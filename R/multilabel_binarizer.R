@@ -49,7 +49,7 @@ multi_label_binarizer <- function(data, feature, sep = "#") {
   )
 
   detection_labels <- labels_raw %>%
-    stringr::str_replace_all("^|$", "#")
+    stringr::str_replace_all("^|$", sep)
 
   # Raw processed feature
   processed_feature <- pad_data_with_sep(data, {{ feature }}, sep) %>%
