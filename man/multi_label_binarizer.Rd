@@ -2,9 +2,12 @@
 % Please edit documentation in R/multilabel_binarizer.R
 \name{multi_label_binarizer}
 \alias{multi_label_binarizer}
+\alias{multi_label_binariser}
 \title{Multi-label Binarizer}
 \usage{
 multi_label_binarizer(data, feature, sep = "#")
+
+multi_label_binariser(data, feature, sep = "#")
 }
 \arguments{
 \item{data}{Input data frame}

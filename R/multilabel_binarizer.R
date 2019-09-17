@@ -62,3 +62,7 @@ multi_label_binarizer <- function(data, feature, sep = "#") {
 
   return(data %>% dplyr::select(-{{ feature }}))
 }
+
+#' @rdname multi_label_binarizer
+#' @export
+multi_label_binariser <- multi_label_binarizer
