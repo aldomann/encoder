@@ -2,4 +2,5 @@
 
 export("%>%")
 export(multi_label_binarizer)
+export(one_hot_encoder)
 importFrom(magrittr,"%>%")
