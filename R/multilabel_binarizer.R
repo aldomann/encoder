@@ -1,14 +1,15 @@
 #' Multi-label Binarizer
 #'
 #' @param data Input data frame
-#' @param feature Unquoted of the feature/column to encode
+#' @param feature Unquoted form of the feature/column to encode
 #' @param sep Inner separator of the labels
+#' @param as_integer Whether the boolean should be converted to integer or not
 #'
 #' @return
 #' @export
 #'
 #' @examples
-multi_label_binarizer <- function(data, feature, sep = "#") {
+multi_label_binarizer <- function(data, feature, sep = "#", as_integer = FALSE) {
   pad_data_with_sep <- function(data, feature, sep = "#") {
     data %>%
       dplyr::mutate(
@@ -58,6 +59,15 @@ multi_label_binarizer <- function(data, feature, sep = "#") {
   # MLB encoding
   for (i in 1:length(labels)) {
     data[[labels[i]]] <- stringr::str_detect(processed_feature, detection_labels[i])
+  }
+
+  # Transform variables into integers
+  if (as_integer) {
+    data <- data %>%
+      dplyr::mutate_at(
+        .vars = dplyr::vars(labels),
+        .funs = as.integer
+      )
   }
 
   return(data %>% dplyr::select(-{{ feature }}))

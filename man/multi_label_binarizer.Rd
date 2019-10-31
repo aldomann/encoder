@@ -5,16 +5,18 @@
 \alias{multi_label_binariser}
 \title{Multi-label Binarizer}
 \usage{
-multi_label_binarizer(data, feature, sep = "#")
+multi_label_binarizer(data, feature, sep = "#", as_integer = FALSE)
 
-multi_label_binariser(data, feature, sep = "#")
+multi_label_binariser(data, feature, sep = "#", as_integer = FALSE)
 }
 \arguments{
 \item{data}{Input data frame}
 
-\item{feature}{Unquoted of the feature/column to encode}
+\item{feature}{Unquoted form of the feature/column to encode}
 
 \item{sep}{Inner separator of the labels}
+
+\item{as_integer}{Whether the boolean should be converted to integer or not}
 }
 \description{
 Multi-label Binarizer
