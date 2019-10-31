@@ -4,12 +4,14 @@
 \alias{one_hot_encoder}
 \title{One-hot Encoder}
 \usage{
-one_hot_encoder(data, feature)
+one_hot_encoder(data, feature, as_integer = FALSE)
 }
 \arguments{
 \item{data}{Input data frame}
 
-\item{feature}{Unquoted of the feature/column to encode}
+\item{feature}{Unquoted form of the feature/column to encode}
+
+\item{as_integer}{Wether the boolean should be converted to integer or not}
 }
 \description{
 One-hot Encoder
