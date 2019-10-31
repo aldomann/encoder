@@ -2,7 +2,7 @@
 #'
 #' @param data Input data frame
 #' @param feature Unquoted form of the feature/column to encode
-#' @param as_integer Wether the boolean should be converted to integer or not
+#' @param as_integer Whether the boolean should be converted to integer or not
 #'
 #' @return
 #' @export
@@ -45,6 +45,7 @@ one_hot_encoder <- function(data, feature, as_integer = FALSE) {
     data[[labels[i]]] <- stringr::str_detect(processed_feature, detection_labels[i])
   }
 
+  # Transform variables into integers
   if (as_integer) {
     data <- data %>%
       dplyr::mutate_at(
