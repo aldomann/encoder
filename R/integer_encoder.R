@@ -2,7 +2,7 @@
 #'
 #' @param data Input data frame
 #' @param feature Unquoted form of the feature/column to encode
-#' @param as_factor Whether the factors should be converted to factors or pure integer
+#' @param as_factor Whether the feature data type should be kept as factor or pure integer
 #'
 #' @return
 #' @export

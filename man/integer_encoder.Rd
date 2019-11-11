@@ -11,7 +11,7 @@ integer_encoder(data, feature, as_factor = TRUE)
 
 \item{feature}{Unquoted form of the feature/column to encode}
 
-\item{as_factor}{Whether the factors should be converted to factors or pure integer}
+\item{as_factor}{Whether the feature data type should be kept as factor or pure integer}
 }
 \description{
 Integer Encoder
