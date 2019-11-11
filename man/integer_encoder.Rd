@@ -4,12 +4,14 @@
 \alias{integer_encoder}
 \title{Integer Encoder}
 \usage{
-integer_encoder(data, feature)
+integer_encoder(data, feature, as_factor = TRUE)
 }
 \arguments{
 \item{data}{Input data frame}
 
 \item{feature}{Unquoted form of the feature/column to encode}
+
+\item{as_factor}{Whether the factors should be converted to factors or pure integer}
 }
 \description{
 Integer Encoder

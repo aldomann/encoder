@@ -2,6 +2,7 @@
 #'
 #' @param data Input data frame
 #' @param feature Unquoted form of the feature/column to encode
+#' @param as_factor Whether the factors should be converted to factors or pure integer
 #'
 #' @return
 #' @export
@@ -9,7 +10,7 @@
 #' @examples
 #' set.seed(11)
 #' integer_encoder(iris[sample(1:150, 10),], Species)
-integer_encoder <- function(data, feature) {
+integer_encoder <- function(data, feature, as_factor = TRUE) {
 
   # Process levels and labels
   levels_raw <- data %>%
@@ -32,6 +33,14 @@ integer_encoder <- function(data, feature) {
         )
       }
     )
+
+  if(!as_factor) {
+    data <- data %>%
+      dplyr::mutate_at(
+        .vars = dplyr::vars({{ feature }}),
+        .funs = as.integer
+      )
+  }
 
   return(data)
 }
