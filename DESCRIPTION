@@ -1,23 +1,23 @@
 Package: encoder
 Title: Data Encoding Methods for Categorical Features
 Version: 2.1.1
-Authors@R: c(
-    person(given = "Alfredo",
-           family = "Hernández",
-           role = c("aut", "cre"),
-           email = "aldomann.designs@gmail.com",
-           comment = c(ORCID = "0000-0002-2660-4545")),
-    person(given = "Ruth",
-           family = "Kristianingsih",
-           role = c("aut"),
-           email = "ruth.kristianingsih30@gmail.com",
-           ))
-Description: The goal of encoder is to provide common encoding methods for categorical features.
+Authors@R: 
+    c(person(given = "Alfredo",
+             family = "Hernández",
+             role = c("aut", "cre"),
+             email = "aldomann.designs@gmail.com",
+             comment = c(ORCID = "0000-0002-2660-4545")),
+      person(given = "Ruth",
+             family = "Kristianingsih",
+             role = "aut",
+             email = "ruth.kristianingsih30@gmail.com"))
+Description: The goal of encoder is to provide common encoding
+    methods for categorical features.
 License: GPL-3
-Encoding: UTF-8
-LazyData: true
 Imports: 
     dplyr,
-    stringr,
-    magrittr
+    magrittr,
+    stringr
+Encoding: UTF-8
+LazyData: true
 RoxygenNote: 6.1.1
