@@ -4,7 +4,7 @@
 #' @param feature Unquoted form of the feature/column to encode
 #' @param as_integer Whether the boolean should be converted to integer or not
 #'
-#' @return
+#' @return Data frame with encodeded feature column
 #' @export
 #'
 #' @examples

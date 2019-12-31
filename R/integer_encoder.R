@@ -4,7 +4,7 @@
 #' @param feature Unquoted form of the feature/column to encode
 #' @param as_factor Whether the feature data type should be kept as factor or pure integer
 #'
-#' @return
+#' @return Data frame with encoded feature column
 #' @export
 #'
 #' @examples

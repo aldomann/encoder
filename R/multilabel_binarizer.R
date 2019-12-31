@@ -5,7 +5,7 @@
 #' @param sep Inner separator of the labels
 #' @param as_integer Whether the boolean should be converted to integer or not
 #'
-#' @return
+#' @return Data frame with additional feature columns
 #' @export
 #'
 #' @examples
