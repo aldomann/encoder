@@ -13,6 +13,9 @@ one_hot_encoder(data, feature, as_integer = FALSE)
 
 \item{as_integer}{Whether the boolean should be converted to integer or not}
 }
+\value{
+Data frame with encodeded feature column
+}
 \description{
 One-hot Encoder
 }

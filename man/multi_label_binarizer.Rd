@@ -18,6 +18,9 @@ multi_label_binariser(data, feature, sep = "#", as_integer = FALSE)
 
 \item{as_integer}{Whether the boolean should be converted to integer or not}
 }
+\value{
+Data frame with additional feature columns
+}
 \description{
 Multi-label Binarizer
 }

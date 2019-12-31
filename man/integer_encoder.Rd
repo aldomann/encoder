@@ -13,6 +13,9 @@ integer_encoder(data, feature, as_factor = TRUE)
 
 \item{as_factor}{Whether the feature data type should be kept as factor or pure integer}
 }
+\value{
+Data frame with encoded feature column
+}
 \description{
 Integer Encoder
 }
