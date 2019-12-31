@@ -10,7 +10,7 @@ Authors@R:
       person(given = "Ruth",
              family = "Kristianingsih",
              role = "aut",
-             email = "ruth.kristianingsih30@gmail.com"))
+             comment = c(ORCID = "0000-0003-1873-6203")))
 Description: The goal of encoder is to provide common encoding
     methods for categorical features.
 License: GPL-3
@@ -20,4 +20,4 @@ Imports:
     stringr
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.1
+RoxygenNote: 7.0.2
