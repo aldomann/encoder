@@ -1,8 +1,12 @@
 
-# encoder <img src="man/figures/logo.png" align="right" width="120" />
+# encoder <img src="man/figures/logo.png" align="right" width="120"/>
 
 <!-- badges: start -->
 
+[![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/encoder)](https://cran.r-project.org/package=encoder)
+[![pkgdown Workflow
+Status](https://github.com/kreh-team/encoder/workflows/pkgdown/badge.svg)](https://kreh-team.github.io/encoder/)
 <!-- badges: end -->
 
 ## Overview
@@ -26,9 +30,9 @@ following methods have been implemented:
 
 <!-- And  -->
 
-The development version from [GitHub](https://github.com/) with:
+The development version can be installed from
+[GitHub](https://github.com/) with:
 
 ``` r
-# install.packages("devtools")
 devtools::install_github("kreh-team/encoder")
 ```
